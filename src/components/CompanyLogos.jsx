@@ -1,13 +1,18 @@
+import { companyLogos } from "../constants";
+
 const CompanyLogos = ({ className }) => {
-  return ( 
+  return (
     <div className={className}>
       <h5 className="mb-6 text-center tagline text-n-1/50">
-      helping people create beautiful conent at</h5>
+        helping people create beautiful conent at
       </h5>
       <ul className="flex">
         {companyLogos.map((logo, index) => (
-          <li>
-        
+          <li
+            className="flex items-center  justify-center flex-1 h-[8.5]"
+            key={index}
+          >
+            <img src={logo} width={134} height={28} alt={logo} />
           </li>
         ))}
       </ul>
