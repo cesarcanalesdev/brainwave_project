@@ -1,0 +1,18 @@
+const CompanyLogos = ({ className }) => {
+  return ( 
+    <div className={className}>
+      <h5 className="mb-6 text-center tagline text-n-1/50">
+      helping people create beautiful conent at</h5>
+      </h5>
+      <ul className="flex">
+        {companyLogos.map((logo, index) => (
+          <li>
+        
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default CompanyLogos;
