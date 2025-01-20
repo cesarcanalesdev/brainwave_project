@@ -14,14 +14,13 @@ const Benefits = () => {
         <div className="flex flex-wrap gap-10 mb-10">
           {benefits.map((item) => (
             <div
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%-100%] md:max-w-[24rem]"
+              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
               style={{
                 backgroundImage: `url(${item.backgroundUrl})`,
               }}
               key={item.id}
             >
-              {console.log(item.backgroundUrl)} {/* Debugging line */}
-              <div>
+              <div className="relative z-2 flex flex-col min-h-[22rem]">
                 <h5>{item.title}</h5>
               </div>
             </div>
